@@ -1,0 +1,15 @@
+.footer {
+  border-top: 1px solid var(--border);
+  padding: 1.75rem clamp(1.5rem, 5vw, 4rem);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.txt {
+  font-size: 0.75rem;
+  color: var(--subtle);
+  letter-spacing: 0.06em;
+}

@@ -1,0 +1,86 @@
+/* ── Global Reset & Base ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg:          #020D1F;
+  --surface:     #061628;
+  --card:        #081D35;
+  --border:      #0E2D52;
+  --text:        #E8F0FC;
+  --muted:       #6B8CB8;
+  --subtle:      #2A4A70;
+  --blue:        #4A90E2;
+  --blue-bright: #60A5FA;
+  --blue-dim:    #2563EB;
+  --blue-bg:     rgba(74, 144, 226, 0.08);
+  --blue-border: rgba(74, 144, 226, 0.22);
+  --green:       #34D399;
+  --green-bg:    rgba(52, 211, 153, 0.08);
+  --red:         #F87171;
+  --red-bg:      rgba(248, 113, 113, 0.08);
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'DM Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
+
+img, svg {
+  display: block;
+  max-width: 100%;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+input, textarea {
+  font-family: inherit;
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--subtle);
+}
+
+/* ── Selection ── */
+::selection {
+  background: rgba(74, 144, 226, 0.25);
+  color: var(--text);
+}
