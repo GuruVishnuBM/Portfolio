@@ -15,21 +15,31 @@ export default function Hero() {
       <div className={styles.arc2} />
 
       <div className={styles.wrap}>
-        <div className={styles.content}>
-          <div className={`${styles.eyebrow} fu`}>
-            {PERSONAL.role} · {PERSONAL.location}
+        <div className={styles.heroInner}>
+          <div className={styles.content}>
+            <div className={`${styles.eyebrow} fu`}>
+              {PERSONAL.role} · {PERSONAL.location}
+            </div>
+            <h1 className={`${styles.title} fu2`}>
+              Building clean<br />systems with<br /><em>purpose</em>
+            </h1>
+            <p className={`${styles.sub} fu3`}>{PERSONAL.heroDesc}</p>
+            <div className={`${styles.btns} fu4`}>
+              <button className="btn-blue" onClick={() => scrollTo("projects") }>
+                View My Work
+              </button>
+              <button className="btn-ghost" onClick={() => scrollTo("contact") }>
+                Get In Touch
+              </button>
+            </div>
           </div>
-          <h1 className={`${styles.title} fu2`}>
-            Building clean<br />systems with<br /><em>purpose</em>
-          </h1>
-          <p className={`${styles.sub} fu3`}>{PERSONAL.heroDesc}</p>
-          <div className={`${styles.btns} fu4`}>
-            <button className="btn-blue" onClick={() => scrollTo("projects")}>
-              View My Work
-            </button>
-            <button className="btn-ghost" onClick={() => scrollTo("contact")}>
-              Get In Touch
-            </button>
+
+          <div className={styles.heroImage}>
+            <img
+              src="/profile.png"
+              alt="Profile picture"
+              className={styles.image}
+            />
           </div>
         </div>
       </div>

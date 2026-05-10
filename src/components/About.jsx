@@ -21,14 +21,12 @@ export default function About() {
               ))}
             </div>
           </div>
-
           {/* Right column */}
           <div className={styles.body}>
             {PERSONAL.about.map((para, i) => (
               <p key={i} dangerouslySetInnerHTML={{ __html: para }} />
             ))}
           </div>
-
         </div>
       </div>
     </section>

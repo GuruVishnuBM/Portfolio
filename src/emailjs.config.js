@@ -22,7 +22,7 @@
 */
 
 export const EMAILJS_CONFIG = {
-  SERVICE_ID:  "YOUR_SERVICE_ID",   // e.g. "service_abc1234"
-  TEMPLATE_ID: "YOUR_TEMPLATE_ID",  // e.g. "template_xyz5678"
-  PUBLIC_KEY:  "YOUR_PUBLIC_KEY",   // e.g. "aBcDeFgHiJkLmNoP"
+  SERVICE_ID:  "service_4yun3ms",   // e.g. "service_abc1234"
+  TEMPLATE_ID: "template_vuri6po",  // e.g. "template_xyz5678"
+  PUBLIC_KEY:  "O_LTnilj-mQ9odlzZ",   // e.g. "aBcDeFgHiJkLmNoP"
 }

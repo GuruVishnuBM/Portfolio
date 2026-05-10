@@ -90,7 +90,7 @@ export default function Contact() {
               <label>Your Name</label>
               <input
                 name="name" value={form.name} onChange={handle}
-                placeholder="Jane Smith"
+                placeholder="Name"
                 className={errors.name ? styles.inputError : ''}
               />
             </div>
@@ -98,7 +98,7 @@ export default function Contact() {
               <label>Email Address</label>
               <input
                 name="email" value={form.email} onChange={handle}
-                placeholder="jane@company.com"
+                placeholder="you@gmail.com"
                 className={errors.email ? styles.inputError : ''}
               />
             </div>
