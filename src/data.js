@@ -9,10 +9,10 @@ export const PERSONAL = {
   linkedin:   "https://www.linkedin.com/in/guru-vishnu-b-m-20520421a",
   github:     "https://github.com/GuruVishnuBM",
   tagline:    "Building clean systems with purpose",
-  heroDesc:   "Backend-focused Software Development Engineer with 1+ year of production experience designing and building enterprise-grade financial applications. Proficient in C#/.NET Core, React.js, TypeScript, SQL Server and AWS.",
+  heroDesc:   "Backend-focused Software Development Engineer with 1+ year of production experience designing and building enterprise-grade financial applications. Proficient in C#/.Net Framework, React.js, TypeScript, SQL Server and AWS.",
   about: [
     "Hi, I'm <strong>Guru Vishnu B M</strong> — a Software Development Engineer based in Bengaluru with production experience building enterprise-grade financial applications in regulated banking environments.",
-    "I specialize in backend development with <strong>C#/.NET Core, ASP.NET Core, and RESTful API design</strong>, while also delivering full-stack features using React.js, Redux, and TypeScript. I've independently owned complete JIRA epics end-to-end — from requirements through production deployment — within a single sprint.",
+    "I specialize in backend development with <strong>C#/.Net Framework, ASP.Net Framework, and RESTful API design</strong>, while also delivering full-stack features using React.js, Redux, and TypeScript. I've independently owned complete JIRA epics end-to-end — from requirements through production deployment — within a single sprint.",
     "I'm driven by clean architecture, SOLID principles, and the satisfaction of building scalable, maintainable systems. I actively leverage <strong>GitHub Copilot</strong> daily to accelerate development, improve code quality, and deliver faster.",
   ],
   stats: [
@@ -33,7 +33,7 @@ export const EXPERIENCE = [
     from:     "Mar 2025",
     to:       "Mar 2026",
     points: [
-      "Designed and maintained RESTful APIs for enterprise Credit Risk financial applications using C#/.NET Core and ASP.NET Core, following OOP, SOLID, and design patterns (Repository, Factory, Strategy).",
+      "Designed and maintained RESTful APIs for enterprise Credit Risk financial applications using C#/.NET Framework and ASP.NET Framework, following OOP, SOLID, and design patterns (Repository, Factory, Strategy).",
       "Independently owned a complete JIRA epic end-to-end — requirements, development, testing, and production deployment — delivered within a single sprint.",
       "Optimised complex SQL Server stored procedures for high-volume trade data ingestion, aggregation, and regulatory reporting.",
       "Built React.js / Redux / TypeScript dashboards for real-time trade exposure and mark-to-market visualisation.",
@@ -42,7 +42,7 @@ export const EXPERIENCE = [
       "Enforced Role-Based Access Control (RBAC) and audit logging across all modules to meet banking compliance standards.",
       "Leveraged GitHub Copilot daily to accelerate feature development, generate unit-test stubs, and perform faster PR reviews.",
     ],
-    stack: ["C#", ".NET Core", "ASP.NET Core", "React.js", "Redux", "TypeScript", "SQL Server", "AWS", "GitHub Actions", "GitHub Copilot"],
+    stack: ["C#", ".NET Framework", "ASP.NET Framework", "React.js", "Redux", "TypeScript", "SQL Server", "AWS", "GitHub Actions", "GitHub Copilot"],
   },
   {
     role:     "Co-Founder",
@@ -66,7 +66,7 @@ export const PROJECTS = [
     tag:   "FinTech · Credit Risk",
     title: "Counterparty Credit Risk Web App",
     desc:  "Production credit risk system enabling banks to monitor daily institutional trades and compute risk scores. Built RESTful APIs connecting backend services to React/Redux/TypeScript dashboards for real-time trade exposure and mark-to-market data.",
-    stack: ["C#", ".NET Core", "React.js", "Redux", "TypeScript", "SQL Server", "AWS", "GitHub Copilot"],
+    stack: ["C#", ".Net Framework", "React.js", "Redux", "TypeScript", "SQL Server", "AWS", "GitHub Copilot"],
     link:  "#",
   },
   {
@@ -89,8 +89,8 @@ export const SKILLS = [
   {
     group: "Backend & APIs",
     items: [
-      { name: "C# / .NET Core",    pct: 88 },
-      { name: "ASP.NET Core",      pct: 85 },
+      { name: "C# / .NET Framework",    pct: 88 },
+      { name: "ASP.NET Framework",      pct: 85 },
       { name: "RESTful APIs",      pct: 92 },
       { name: "SQL Server",        pct: 84 },
     ],
