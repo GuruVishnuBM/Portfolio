@@ -15,6 +15,7 @@
   align-items: center;
   justify-content: space-between;
   height: 62px;
+  position: relative;
 }
 
 .logo {
@@ -25,8 +26,18 @@
   color: var(--text);
 }
 
-.dot {
-  color: var(--blue-bright);
+.menuButton {
+  display: none;
+  width: 42px;
+  height: 42px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text);
+  font-size: 1.1rem;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
 }
 
 .links {
@@ -49,11 +60,51 @@
   color: var(--blue-bright);
 }
 
-@media (max-width: 600px) {
-  .links {
-    gap: 1rem;
+@media (max-width: 760px) {
+  .menuButton {
+    display: inline-flex;
   }
+
+  .links {
+    position: absolute;
+    top: 62px;
+    right: 0;
+    left: 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 1rem clamp(1.5rem, 5vw, 4rem);
+    background: rgba(2, 13, 31, 0.97);
+    border-bottom: 1px solid var(--border);
+    display: none;
+  }
+
+  .links.open {
+    display: flex;
+  }
+
+  .links li {
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 0.85rem 0;
+  }
+
+  .links li:first-child {
+    border-top: none;
+  }
+
   .links a {
-    font-size: 0.65rem;
+    font-size: 0.88rem;
+    color: var(--text);
+    padding: 0.5rem 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .inner {
+    padding: 0 1rem;
+  }
+
+  .links a {
+    font-size: 0.82rem;
   }
 }
