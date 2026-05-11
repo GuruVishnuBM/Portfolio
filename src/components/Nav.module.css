@@ -24,6 +24,11 @@
   font-weight: 500;
   letter-spacing: 0.03em;
   color: var(--text);
+  cursor: pointer;
+}
+
+.logo:hover {
+  color: var(--blue-bright);
 }
 
 .menuButton {
