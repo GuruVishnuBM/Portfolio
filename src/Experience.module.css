@@ -1,0 +1,167 @@
+.section {
+  padding: 6rem 0;
+  background: var(--surface);
+}
+
+.wrap {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 clamp(1.5rem, 5vw, 4rem);
+}
+
+/* Timeline */
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  bottom: 0;
+  width: 1px;
+  background: linear-gradient(to bottom, var(--blue), rgba(74,144,226,0.08));
+}
+
+.item {
+  position: relative;
+  margin-bottom: 2.8rem;
+  padding-bottom: 2.8rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* Timeline dot */
+.dot {
+  position: absolute;
+  left: -2.38rem;
+  top: 7px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--blue);
+  border: 2px solid var(--bg);
+  box-shadow: 0 0 0 2px var(--blue);
+}
+
+/* Role + duration row */
+.top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.55rem;
+}
+
+.role {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--text);
+  line-height: 1.2;
+}
+
+.duration {
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--blue-bright);
+  background: var(--blue-bg);
+  border: 1px solid var(--blue-border);
+  padding: 0.22rem 0.65rem;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* Company meta */
+.meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-bottom: 0.5rem;
+}
+
+.company {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--blue-bright);
+}
+
+.sep {
+  color: var(--border);
+  font-size: 0.75rem;
+}
+
+.location {
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.type {
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  color: var(--subtle);
+  text-transform: uppercase;
+}
+
+/* Team/domain badge */
+.team {
+  font-size: 0.75rem;
+  color: var(--muted);
+  margin-bottom: 1rem;
+  padding: 0.3rem 0.7rem;
+  background: rgba(74,144,226,0.05);
+  border-left: 2px solid var(--blue-border);
+  display: inline-block;
+}
+
+/* Bullet points */
+.points {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  margin: 1rem 0 1.2rem;
+}
+
+.points li {
+  font-size: 0.87rem;
+  font-weight: 300;
+  color: var(--muted);
+  line-height: 1.75;
+  padding-left: 1.2rem;
+  position: relative;
+}
+
+.points li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--blue);
+  font-size: 0.72rem;
+  top: 0.15rem;
+}
+
+/* Tech stack tags */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.tag {
+  font-size: 0.68rem;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  padding: 0.2rem 0.55rem;
+}
